@@ -1,14 +1,14 @@
 /** First function : it must return "Hello, World!" */
 export function helloWorld() {
-    
+    return "Hello, World!"
 }
 
 /** 
  * Write a function that returns the sum of the two numbers passed as arguments.
  */
 export function sum(a, b) {
-    
-}
+  return a + b  
+} 
 
 /**
  * Write a function that converts Celcius degrees into Fahrenheit.
@@ -18,7 +18,7 @@ export function sum(a, b) {
  * @returns the temperature converted to Fahrenheit
  */
 export function celciusToFahrenheit(celciusTemperature) {
-    
+    return(celciusTemperature * 9/5 + 32)
 }
 
 /**
@@ -27,21 +27,33 @@ export function celciusToFahrenheit(celciusTemperature) {
  * string.length() to get the length of a string.
  */
 export function isGreaterThan8(word) {
-    
+    if (word.length > 8){
+        return true
+    } else {
+        return false
+    }
 }
 
 /**
  * Write a XOR function, which is the exclusive version of the OR
  */
 export function xor(a, b) {
-    
+    if (a == b){
+        return false
+    } else {
+        return true
+    }
 }
 
 /**
  * Similarily, write a XNOR function, also called equivalence, which returns true only if both boolean arguments are true or false
  */
 export function xnor(a, b) {
-    
+    if (a == b){
+        return true
+    } else {
+        return false
+    }
 }
 
 /**
